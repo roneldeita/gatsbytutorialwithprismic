@@ -5,7 +5,7 @@ import Layout from '../components/Layout'
 import SEO from '../components/SEO'
 import SliceZone from '../components/SliceZone'
 
-export const PageTemplate = ({ data }) => {
+export const pageTemplate = ({ data }) => {
   if (!data) return null
   const document = data.allPrismicPage.edges[0].node
   const prismicNavigation = data.prismicNavigation
@@ -117,4 +117,4 @@ export const query = graphql`
   }
 `
 
-export default withPreview(PageTemplate)
+export default withPreview(pageTemplate)
