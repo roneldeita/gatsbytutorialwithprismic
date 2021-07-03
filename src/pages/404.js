@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { withUnpublishedPreview } from 'gatsby-source-prismic'
-import { PageTemplate } from '../templates/page'
+import { PageTemplate } from '../templates/Page'
 import { HomeTemplate } from './index'
 
 const NotFoundPage = () => (
