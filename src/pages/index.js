@@ -6,7 +6,7 @@ import SEO from '../components/SEO'
 import HomepageBanner from '../components/HomepageBanner'
 import SliceZone from '../components/SliceZone'
 
-export const homeTemplate = ({ data }) => {
+export const HomeTemplate = ({ data }) => {
   if (!data) return null
   const document = data.allPrismicHomepage.edges[0].node.data
 
@@ -141,4 +141,4 @@ export const query = graphql`
     }
   }
 `
-export default withPreview(homeTemplate)
+export default withPreview(HomeTemplate)

@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { withUnpublishedPreview } from 'gatsby-source-prismic'
 import { PageTemplate } from '../templates/page'
-import { homeTemplate } from './index'
+import { HomeTemplate } from './index'
 
 const NotFoundPage = () => (
   <div>
@@ -13,8 +13,8 @@ const NotFoundPage = () => (
 export default withUnpublishedPreview(NotFoundPage, {
   templateMap: {
     page: PageTemplate,
-    homepage: homeTemplate,
+    homepage: HomeTemplate,
     prismicPage: PageTemplate,
-    prismicHomepage: homeTemplate,
+    prismicHomepage: HomeTemplate,
   },
 })
